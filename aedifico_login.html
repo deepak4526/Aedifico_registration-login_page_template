@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>AEDIFICO LOGIN/REGISTRATION FORM</title>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<style type="text/css">
+
+	body{
+	 background-image:url(4.jpg);
+	 background-size:cover;
+	 background-attachment: fixed;
+	}
+	.logo{
+	position:fixed;
+	margin-top:-60px;
+	padding:0 0 100px 0;
+	opacity:1;
+	height:60px;
+	width:100%;
+	display:block;
+}
+.logo img{
+		height:60px;
+		position:fixed;
+}
+
+h4{
+	font-weight:400;
+	margin:0 0 10px;
+	text-transform:uppercase;
+}
+
+	.cnt-links ul{
+		list-style:none;
+		text-align:center;
+		margin:0 auto;
+		float:left;
+		width:100%;
+	}
+	.cnt-links ul li{
+		margin-right:13px;
+		/*text-align:center;*/
+		display:inline-block;
+	}
+	a#fi:after{
+		position:absolute;
+		content:'';
+		background:#000;
+		height:15px;
+		width:1 px;
+		top:3px;
+		right:-7px
+	}
+	a#fi{
+		position:relative;
+	}
+	.cnt-links{
+		float:left;
+		width:100%;
+		text-align:center;
+		margin:0 auto;
+		margin-top:-14px;
+		margin-bottom:11px;
+		padding-left:29px;
+	}
+
+	div#Form2{
+		display:none;
+
+	}
+	#fullform{
+		margin-top:60px;
+		width:40%;
+		margin-left:55%;
+		border-radius: 5px;
+  		background-color: #f2f2f2 ;
+  		opacity:0.7;
+  		
+}
+
+ul,li,th,td{
+	border:0;padding:0;
+}
+
+table{
+	border-collapse:collapse;
+	border-spacing:0;
+	border-width:1px 0 0 1px;
+	margin-bottom:24px;
+	width:100%;
+	cell-padding:10%;
+	}\
+	th,td{
+		padding:5px
+	}
+	td input{
+		width:80%;
+		height:25px;
+	}
+#rglg{
+	background-color:transparent;
+		
+width: 80%;
+padding:15px;
+margin:0 9% 0 9%;
+}
+.Register-box {
+    float: left;
+    width: 30%;
+    text-align: left;
+    margin-bottom:10px;
+}
+.login-box{
+	float:right;
+	text-align:right;
+	width:30%;
+	
+}
+#Form2,#Form1{
+	padding:20px;
+}
+input[type=text],input[type=password],input[type=email]{
+			box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+input[type=submit],input[type=reset] {
+			box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  width: 100%;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+input[type=submit]{
+			box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  background-color: #4287f5;
+}
+input[type=reset]{
+			box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	background-color:#e01422;
+}
+
+input[type=submit]:hover {
+			box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  background-color: #8caee6;
+}
+input[type=reset]:hover {
+			box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  background-color: #d68c89;
+}
+@media only screen and (max-width: 1024px) {
+	.logo{
+		margin-bottom:50px;
+		margin-top:-50px;
+	}
+	#fullform{
+		width:45%;
+		margin-left:50%;
+		opacity:0.9;}
+		.logo img{
+		height:50px;
+		margin-bottom: 50px
+}
+	}
+@media only screen and (max-width: 802px) {
+	.logo{
+		margin-top:-40px;
+		/*margin-bottom:44px;*/
+	}
+	#fullform{
+		width:75%;
+		margin:50px 12.4% 0 12.6%;
+	}
+	.logo img{
+		height:40px;
+		margin-bottom:40px;
+}
+}
+
+@media only screen and (max-width: 617px) {
+	#rglg{
+		width:80%;
+		margin:0 2.4% 0 2.4%;
+	}
+	.Register-box {
+    margin-left:15%;
+    width: 30%;
+    text-align: left;
+    }
+    .logo img{
+		height:30px;
+}
+  }
+
+@media only screen and (max-width: 500px) {
+	body{
+		background-image: url("5.jpg");
+		background-size:cover;	
+	}
+	#fullform{
+		background-color:transparent;
+	}
+	#rglg{
+		width:80%;
+		margin:auto;
+		background-color:transparent;
+	}
+	input[type=text],input[type=password],input[type=email]{
+		background-color:lightgreen;
+		opacity:0.7;
+		border:1px solid black;
+	}
+	table{
+		background-color:#8e91ad;
+		border-radius:5px;
+		opacity:0.5;
+	}
+	td{
+		padding:10px;
+	}
+	.Register-box {
+		float:left;
+    text-align: left;
+}
+
+.login-box{
+	float:right;
+	text-align:right;
+	
+}
+
+.logo img{
+		height:20px;
+}
+}
+</style>
+
+</head>
+<body>
+<div class="logo">
+	<img src="aedifico_logo.png">
+	<div class="empty-div"></div>
+</div>
+
+
+
+
+<div id="fullform">
+	<div id="rglg">
+<div class="Register-box">
+	<h4><a href="" style="color: #ccc" onclick="return fnChangeForm(1);" id="zi">Register</a></h4>
+</div>
+<div class="login-box">
+	<h4><a href="" style="color: #129793" onclick="return fnChangeForm(2);" id="fl" data-value="0">Login</a></h4>
+</div>
+</div>
+<div id="formhide" style="display:none" class="cnt-links">
+	<ul>
+		<li>
+			<a href="" style="color: #129793" onclick="return fnChangeForm(3);" id="fi">Students</a>
+		</li>
+		<li>
+			<a href="" onclick="return fnChangeForm(4);" id="fc">Professional</a>
+		</li>
+	</ul>
+</div>
+
+<div id="Form1">
+	<form>
+		<div>
+			<table cellpadding="30" cellspacing="2">
+				<tbody>
+					<tr>
+						<td style="width:20%">User Email</td>
+						<td><input type="email" tabindex="1" name="loginname" value="" size="16" required=""></td>
+					</tr>
+					<tr>
+						<td style="width:20%">Password</td>
+						<td><input type="password" tabindex="2" name="loginpassword" value="" size="16" required=""></td>
+					</tr>
+				</tbody>
+			</table>
+				<input type="submit" style="width:60%;margin:0 20% 0 20%;" value="Log In" name="login" class="subbtn">
+		</div>
+	</form>
+</div>
+
+<div id="Form2">
+	<form action="#">
+		<input type="text" name="fullname" placeholder="Name" required=""><br>
+		<input type="password" id="password" name="password" placeholder="Password" required=""><br>
+		<input type="password" id="confirmpassword" name="confirmpassword" placeholder="Re-type Password" required=""><br>
+		<input type="email" name="email" placeholder="Email Id" required=""><br>
+		<input type="text" name="contactno" placeholder="Contact No." required=""><br>
+		<input type="text" id="company" name="company" placeholder="College/University" required=""><br>
+		<input type="text" id="designation" name="designation" placeholder="Course" required=""><br>
+		<input type="text" name="city" placeholder="City" required=""><br>
+		<input type="hidden" value="0" name="type" id="type"><br>
+		<input class="my-submit" type="submit" value="Submit" name="register">
+		<input class="my-reset" type="reset" value="Reset">
+	</form>
+</div>
+</div>
+</body>
+</html>	
+
+
+<script>
+function fnChangeForm(fid){
+if(fid==1 || fid==3 || fid==4){
+document.getElementById('formhide').style.display="block";
+}
+else 
+{
+document.getElementById('formhide').style.display="none";
+}
+var form1 = document.getElementById('Form1');
+
+var form2 = document.getElementById('Form2');
+
+var company = document.getElementById('company');
+var designation = document.getElementById('designation');
+var type = document.getElementById('type');
+
+var fi = document.getElementById('fi');
+var fc = document.getElementById('fc');
+var fl = document.getElementById('fl');
+var zi = document.getElementById('zi');
+//alert(form_id);
+if(fid==1){
+Form1.style.display="none";
+Form2.style.display="block";
+zi.style.color="#129793";
+fi.style.color="#129793";
+fc.style.color="#9f9f9f";
+fl.style.color="#9f9f9f";
+company.placeholder="College/University";
+designation.placeholder="Course";
+type.value="0";
+
+}else if(fid==2){
+
+Form1.style.display="block";
+Form2.style.display="none";
+zi.style.color="#9f9f9f";
+fc.style.color="#9f9f9f";
+fi.style.color="#9f9f9f";
+fl.style.color="#129793";
+
+}
+else if(fid==3){
+Form2.style.display="block";
+Form1.style.display="none";
+
+zi.style.color="#129793";
+fi.style.color="#129793";
+fc.style.color="#9f9f9f";
+fl.style.color="#9f9f9f";
+company.placeholder="College/University";
+designation.placeholder="Course";
+type.value="0";
+}
+else if(fid==4){
+Form2.style.display="block";
+Form1.style.display="none";
+zi.style.color="#129793";
+fi.style.color="#9f9f9f";
+fc.style.color="#129793";
+fl.style.color="#9f9f9f";
+company.placeholder="Company Name";
+designation.placeholder="Designation";
+type.value="1";
+}
+return false;
+}
+</script>
